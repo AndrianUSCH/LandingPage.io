@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="css/style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="imagini/logo.png" alt=""></a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>BINE ATI VENIT LA UNIVERSITATEA DE STAT "BOGDAN PETRICEICU HASDEU" DIN CAHUL</li>
+            </ul>
+        </div>
+        <div class="logo1">
+            <img src="imagini/LogoF.png" alt="">
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <h4>Înregistrează-te</h4>
+        <form action="#" class="form">
+          <div class="input-box">
+            <label>Nume Prenume</label>
+            <input type="text"  required />
+          </div>
+  
+          <div class="input-box">
+            <label>Adresa de Email</label>
+            <input type="text"  required />
+          </div>
+  
+          <div class="column">
+            <div class="input-box">
+              <label>Numarul de Telefon</label>
+              <input type="number"  required />
+            </div>
+            <div class="input-box">
+              <label>Data nașterii</label>
+              <input type="date"  required />
+            </div>
+          </div>
+          <div class="gender-box">
+            <h3>Sexul</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-male" name="gender" />
+                <label for="check-male">masculin</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" />
+                <label for="check-female">feminin</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-other" name="gender" />
+                <label for="check-other">prefer să nu spun</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-box address">
+            <label>Adresa</label>
+            <input type="text" placeholder="Introduceți adresa stradală" required />
+            <input type="text" placeholder="Introduceți adresa stradală linia 2" required />
+            <div class="column">
+              <div class="select-box">
+                <select>
+                  <option hidden>Țara</option>
+                  <option>Republica Moldova</option>
+                  <option>România</option>
+                  <option>Spania</option>
+                  <option>Italia</option>
+                  <option>Lituania</option>
+                  <option>Macedonia</option>
+                  <option>Albania</option>
+                  <option>Franța</option>
+                  <option>Bulgaria</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Introduceți orașul dvs." required />
+            </div>
+            <div class="column">
+              <input type="text" placeholder="Introduceți regiunea dvs." required />
+              <input type="number" placeholder="Introduceți codul poștal" required />
+            </div>
+          </div>
+          <button>Trimite</button>
+        </form>
+    </div>
+    
+
+<!---footer--->
+<hr>
+<footer>
+    <div class="social">
+            <a href="https://www.instagram.com/cahul.university/?igshid=MWI4MTIyMDE%3D"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/usch.md"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@usch.md"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCImkTggGuXqocziinYlb34A"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="flex">
+        <div class="logo">
+            <a href="index.html"><img src="imagini/logo.png" alt=""></a>
+        </div>
+        <ul>
+            <h2>Contacte</h2>
+            <li><i class="fa-solid fa-location-dot"></i>MD-3909, or. Cahul, Piaţa Independenţei, 1</li>
+            <li><i class="fa-solid fa-phone"></i>+(373-299) 2-24-81</li>
+            <li><i class="fa-solid fa-fax"></i>Fax:+(373-299) 2-47-52</li>
+            <li><i class="fa-regular fa-envelope"></i>rectorat@adm.usch.md</li>
+        </ul>
+        <div class="logo1">
+            <a href=""><img src="imagini/LogoF.png" alt=""></a>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">
+        COPYRIGHT © 2023 UNIVERSITATEA DE STAT "BOGDAN PETRICEICU HASDEU" DIN CAHUL.
+    </p>
+</footer>
+<script>
+   window.addEventListener('scroll',function(){
+    let header = document.querySelector('header');
+    if(window.pageYOffset > 100){
+        header.classList.add('sticky');
+    }else{
+        header.classList.remove('sticky');
+    }
+   });
+</script>
+</body>
+
+</html>
